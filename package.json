@@ -1,11 +1,11 @@
 {
   "name": "weather-app",
   "version": "0.0.0",
+  "author": "Tane J. Tangu",
   "private": true,
   "scripts": {
-    "start": "npm-run-all --parallel watch:server watch:build",
-    "watch:build": "webpack --mode development --watch",
-    "watch:server": "nodemon \"./bin/www\" --watch \"./dist\""
+    "start": "node ./bin/www",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.15.0",
