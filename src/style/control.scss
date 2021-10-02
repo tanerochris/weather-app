@@ -1,0 +1,54 @@
+.controls {
+    .unit-control {
+        display: flex;
+        justify-content: space-between;
+        margin: 1em;
+        flex-wrap: nowrap;
+    }
+    .button-group-mobile {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .prev-next {
+        background-color: $primary;
+        color: $white;
+    }
+
+    .refresh {
+        width: 10em;
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+    .prev-next, .refresh {
+        &:hover {
+            background: $secondary;
+            color: $white;
+            border: none !important;
+        }
+    }
+    .temp-unit {
+        text-transform: uppercase;
+        color: $secondary;
+        & span {
+            font-weight: 600 !important;
+        }
+        .radio {
+            color: $primary !important;
+        }
+    }
+    .desktop-control-display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .unit-control, .button-group-desktop {
+            flex-grow: 3; 
+            display: flex;
+            justify-content: end;
+        }
+        .button-group-desktop {
+            flex-grow: 3;
+        }
+    }
+}
