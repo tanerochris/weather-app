@@ -42,7 +42,7 @@ const Weather = (props) => {
                  spacing={2}>
                     <Grid item sm={3} md={3} className={isMobile ? 'is-hidden': ''}>
                     </Grid>
-                    <Grid item sm={6} md={6}>
+                    <Grid className="main-container" item sm={6} md={6}>
                         <div className="controls">
                             <ControlsDisplay 
                                 value={unit}

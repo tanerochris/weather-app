@@ -4,17 +4,17 @@
     margin: 2em 0em;
     .weather-card {
         font-weight: 500;
-        font-size: 17px;
+        font-size: 0.9rem;
         justify-content: center;
         flex-direction: column;
         display: flex;
         margin: 5px;
-        padding: 12px;
+        padding: 25px;
         background: $white;
         width: calc(100% - 10rem);
         color: $primary;
         cursor: pointer;
-        box-shadow: 1px 2px 2px -1px #5d5f71;
+        box-shadow: 1px 2px 2px -1px $primary;
         &:hover {
             background: $secondary;
             color: $white;
@@ -28,7 +28,7 @@
 @media (max-width: 480px) {
     .weather-display {
         .weather-card {
-            width: 100% !important;
+            width: 60% !important;
         }
     }
 }
