@@ -54,8 +54,8 @@ const ControlsMobileDisplay = (props) => {
                     className="unit-control"
                     onChange={() => changeUnit(document.activeElement.value)}
                     >
-                        <FormControlLabel className="temp-unit" value={CELC} control={<Radio className="radio"/>} label="Celcius" />
-                        <FormControlLabel className="temp-unit" value={FAREN} control={<Radio className="radio"/>} label="Farhenheit" />
+                        <FormControlLabel className="temp-unit" value={CELC} control={<Radio className="radio"/>} label={CELC} />
+                        <FormControlLabel className="temp-unit" value={FAREN} control={<Radio className="radio"/>} label={FAREN} />
                 </RadioGroup>
                 <div className="button-group-mobile">
                     <IconButton disabled={!showPrevBtn} className={`prev-next ${showPrevBtn ? '' : 'is-hidden'}`}  onClick={() => prevBtn()}>

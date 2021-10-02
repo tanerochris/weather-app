@@ -18,7 +18,7 @@ const TempBarChart = (props) => {
         const temp = calcTemp(props.unit, temperature)
         return [timeString, temp]
     })
-    
+
     useLayoutEffect(() => {
         // set style on barchart after it has renderd
         setStyle(state => ({...state,
@@ -51,8 +51,9 @@ const TempBarChart = (props) => {
                 colors: ['#5D5F71'],
                 legend: { position: 'none' },
               }}
-            loader={<div>Loading Temperature Chart For {props.date}</div>}
+            loader={<div  className="barchart-loader">Loading bar chart for {props.title}</div>}
         />
     </div>
-}
+/*     <CircularProgress className="barchart-loader" color="inherit" />
+ */}
 export default TempBarChart
