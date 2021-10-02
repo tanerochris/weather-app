@@ -9,22 +9,21 @@
         display: flex;
         justify-content: space-evenly;
     }
-    .prev-next {
+    .prev-next, .refresh {
         background-color: $primary;
         color: $white;
     }
 
     .refresh {
         width: 10em;
-        color: $primary;
-        border: 1px solid $primary;
+        border: none;
         border-radius: 5px;
         font-weight: 700;
     }
     .prev-next, .refresh {
         &:hover {
-            background: $secondary;
-            color: $white;
+            background: $white;
+            color: $primary;
             border: none !important;
         }
     }

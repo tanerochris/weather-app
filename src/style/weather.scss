@@ -10,19 +10,26 @@
         display: flex;
         margin: 5px;
         padding: 25px;
-        background: $white;
+        background: $secondary;
+        color: $white;
         width: calc(100% - 10rem);
-        color: $primary;
         cursor: pointer;
         box-shadow: 1px 2px 2px -1px $primary;
         &:hover {
-            background: $secondary;
-            color: $white;
+            background: $white;
+            color: $primary;
         }
         & > * {
             margin: 0.5em 0;
         }
-        
+        .temp {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                font-size: 2em !important;
+            }
+        }
     }
 }
 @media (max-width: 480px) {

@@ -18,6 +18,7 @@ const WeatherCard = (props) => {
                <div className="title"><span>Temperature</span></div>
                <div className="temp">
                    <span>{temperature}</span>
+                   <img src={`https://openweathermap.org/img/wn/${props.weather[0].icon}@2x.png`} />
                </div>
                <div className="date"><span>{props.date}</span></div>
         </div>
